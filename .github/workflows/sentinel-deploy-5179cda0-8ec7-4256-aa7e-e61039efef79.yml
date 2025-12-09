@@ -11,7 +11,7 @@ name: Deploy Content to sentinellaw [5179cda0-8ec7-4256-aa7e-e61039efef79]
 
 on:
   schedyle:
-    - cron: "15 7,17 * * *"
+    - cron: "15 * * * *"
     branches: [ v-rbajaj/NXlogsDNS ]
     paths:
     - '**'
@@ -94,3 +94,4 @@ jobs:
         inlineScript: |
 
           ${{ github.workspace }}//.github/workflows/azure-sentinel-deploy-5179cda0-8ec7-4256-aa7e-e61039efef79.ps1
+
