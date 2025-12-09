@@ -26,7 +26,7 @@ jobs:
       workspaceId: 'a5c50edb-78d4-4a3c-ae54-f500c6137dc3'
       directory: '${{ github.workspace }}'
       cloudEnv: 'AzureCloud'
-      contentTypes: 'AnalyticsRule,AutomationRule,HuntingQuery,Playbook,Workbook,Parser'
+      contentTypes: 'AnalyticsRule,AutomationRule,HuntingQuery,Playbook,Workbook,Parser,DataConnector'
       branch: 'v-rbajaj/NXlogsDNS'
       sourceControlId: '5179cda0-8ec7-4256-aa7e-e61039efef79'
       rootDirectory: '${{ github.workspace }}'
@@ -93,6 +93,7 @@ jobs:
         inlineScript: |
 
           ${{ github.workspace }}//.github/workflows/azure-sentinel-deploy-5179cda0-8ec7-4256-aa7e-e61039efef79.ps1
+
 
 
 
